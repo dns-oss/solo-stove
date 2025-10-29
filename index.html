@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Stove Germany - Reseller Activity Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the dark theme and font */
+        :root {
+            --color-bg-dark: #111827;
+            --color-card-bg: #1f2937;
+            --color-header-accent: #2563eb; /* bg-blue-600 */
+            --color-text-green: #4ade80; /* text-green-400 */
+            --color-text-red: #f87171; /* text-red-400 */
+            --color-table-header: #374151; /* bg-gray-700 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg-dark);
+            color: #d1d5db; /* text-gray-300 */
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .report-card {
+            background-color: var(--color-card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header-accent {
+            background-color: var(--color-header-accent);
+            color: white;
+            padding: 15px 30px;
+            margin: -30px -30px 30px -30px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 1.75rem;
+            margin-bottom: 15px;
+            color: #f3f4f6; /* text-gray-50 */
+            border-bottom: 2px solid #374151;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #f3f4f6;
+        }
+        .table-header {
+            background-color: var(--color-table-header);
+            color: #f3f4f6;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+        .table-row-odd {
+            background-color: #2a3443; /* slightly lighter than card-bg for contrast */
+        }
+        .table-row-even {
+            background-color: var(--color-card-bg);
+        }
+        .download-btn {
+            background-color: #f97316; /* bg-orange-500 */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #ea580c; /* bg-orange-600 */
+        }
+        .book-meeting-btn {
+            background-color: #10b981; /* bg-emerald-500 */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .book-meeting-btn:hover {
+            background-color: #059669; /* bg-emerald-600 */
+        }
+
+        /* Utility classes for text colors */
+        .text-green {
+            color: var(--color-text-green);
+        }
+        .text-red {
+            color: var(--color-text-red);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="report-card">
+        <div class="header-accent">
+            <h1 class="text-3xl font-bold">Solo Stove Germany: Black Friday Reseller Activity Report</h1>
+            <p class="text-sm mt-1">Analysis Period: Black Friday | Market: Germany (DE)</p>
+        </div>
+
+        <section class="mb-8">
+            <h2>Executive Summary 🇩🇪</h2>
+            <p class="text-gray-400">
+                This report analyzes Solo Stove's German reseller landscape during the Black Friday period, examining discount patterns, inventory levels, and competitive positioning across 20+ retail partners. The analysis reveals significant variation in retailer discount strategies and stock management, presenting both opportunities and challenges for brand protection during the high-stakes Black Friday sales period. The German market shows concerning stock management at key partners and significant retailer discount activity. Due to EU regulations, direct price control is limited, requiring a strategic shift towards leveraging partnership quality, inventory allocation, and value-added programs to influence retailer behavior.
+            </p>
+        </section>
+
+        <section class="mb-8">
+            <h2>Retailer Discounting Analysis 📉</h2>
+            <p class="text-gray-400 mb-4">
+                Retailer discounting is aggressive, with deep discounts potentially leading to brand value erosion and channel conflict, undermining D2C margins.
+            </p>
+
+            <h3 class="mt-0">Most Aggressive Discounting by Average:</h3>
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full text-sm rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="table-header">
+                            <th class="p-3 text-left">Retailer</th>
+                            <th class="p-3 text-center">Products Tracked</th>
+                            <th class="p-3 text-center">Average Discount</th>
+                            <th class="p-3 text-center">Deepest Single Discount</th>
+                            <th class="p-3 text-center">Products w/ 20%+ Discount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row-odd">
+                            <td class="p-3">fruugo.de</td>
+                            <td class="p-3 text-center">1</td>
+                            <td class="p-3 text-center text-red">38.4%</td>
+                            <td class="p-3 text-center">38.4%</td>
+                            <td class="p-3 text-center">1</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="p-3">kamdi24.de</td>
+                            <td class="p-3 text-center">8</td>
+                            <td class="p-3 text-center text-red">21.8%</td>
+                            <td class="p-3 text-center">33.5%</td>
+                            <td class="p-3 text-center">4</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="p-3">ebay.de</td>
+                            <td class="p-3 text-center">4</td>
+                            <td class="p-3 text-center">15.7%</td>
+                            <td class="p-3 text-center">47.1%</td>
+                            <td class="p-3 text-center">1</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="p-3">hot-pott.com</td>
+                            <td class="p-3 text-center">27</td>
+                            <td class="p-3 text-center">15.3%</td>
+                            <td class="p-3 text-center">49.9%</td>
+                            <td class="p-3 text-center">6</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="p-3">grillgott.com</td>
+                            <td class="p-3 text-center">5</td>
+                            <td class="p-3 text-center">14.1%</td>
+                            <td class="p-3 text-center">22.4%</td>
+                            <td class="p-3 text-center">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="mt-4">Average Discount Percentage by Retailer</h3>
+            <div class="h-64 flex justify-center items-center bg-gray-700 rounded-lg p-4">
+                <span class="text-gray-500">Bar chart visualization of average discount by retailer</span>
+                            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2>Stock Availability Analysis 📦</h2>
+            <p class="text-gray-400 mb-4">
+                Stock-outs at key partners during peak sales periods result in lost revenue opportunities. Several retailers show concerning stock levels.
+            </p>
+
+            <h3 class="mt-0">Resellers with Critical Stock Levels:</h3>
+            <div class="overflow-x-auto mb-4">
+                <table class="min-w-full text-sm rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="table-header">
+                            <th class="p-3 text-left">Retailer</th>
+                            <th class="p-3 text-center">Total Products</th>
+                            <th class="p-3 text-center">Out of Stock</th>
+                            <th class="p-3 text-center">Stock Availability</th>
+                            <th class="p-3 text-center">Risk Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row-odd">
+                            <td class="p-3">grillgott.com</td>
+                            <td class="p-3 text-center">5</td>
+                            <td class="p-3 text-center">4</td>
+                            <td class="p-3 text-center text-red">20.0%</td>
+                            <td class="p-3 text-center text-red">Critical</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="p-3">fluchtrucksack.de</td>
+                            <td class="p-3 text-center">19</td>
+                            <td class="p-3 text-center">14</td>
+                            <td class="p-3 text-center text-red">26.3%</td>
+                            <td class="p-3 text-center text-red">Critical</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="p-3">leuchtenland.com</td>
+                            <td class="p-3 text-center">66</td>
+                            <td class="p-3 text-center">29</td>
+                            <td class="p-3 text-center text-red">56.1%</td>
+                            <td class="p-3 text-center text-red">High</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="p-3">hot-pott.com</td>
+                            <td class="p-3 text-center">38</td>
+                            <td class="p-3 text-center">8</td>
+                            <td class="p-3 text-center text-green">78.9%</td>
+                            <td class="p-3 text-center">Moderate</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="p-3">flammenpapst.de</td>
+                            <td class="p-3 text-center">44</td>
+                            <td class="p-3 text-center">9</td>
+                            <td class="p-3 text-center text-green">79.5%</td>
+                            <td class="p-3 text-center">Low</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="mt-4">Stock Availability by Retailer</h3>
+            <div class="h-64 flex justify-center items-center bg-gray-700 rounded-lg p-4">
+                <span class="text-gray-500">Bar chart visualization of stock availability by retailer</span>
+                            </div>
+            <p class="text-gray-400 mt-2">
+                <strong class="text-yellow-400">Critical Note:</strong> Grillgoods.de, the largest retail partner (80 products), is currently experiencing 18.8% stock issues during the peak sales period.
+            </p>
+        </section>
+
+        <section class="mb-8">
+            <h2>Strategic Recommendations for Compliance ⚖️</h2>
+            <p class="text-gray-400">
+                Given EU competition law constraints preventing direct price control, Solo Stove should focus on compliant strategies to influence retailer behavior.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div>
+                    <h3>1. Selective Distribution & Partnership Quality</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Prioritize partnerships with retailers demonstrating brand-aligned positioning.</li>
+                        <li>Consider reducing SKU availability to retailers showing consistently aggressive discounting patterns.</li>
+                        <li>Implement tiered partnership levels based on brand compliance metrics.</li>
+                    </ul>
+
+                    <h3>3. Direct-to-Consumer Strengthening</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Enhance D2C experience with exclusive bundles unavailable through retail.</li>
+                        <li>Develop loyalty programs that reward direct purchases.</li>
+                        <li>Implement customer education campaigns highlighting authentic Solo Stove experience.</li>
+                    </ul>
+                    
+                    <h3>5. Market Communication Strategy</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Develop clear brand messaging emphasizing product quality and experience over price.</li>
+                        <li>Establish a consistent seasonal promotional calendar to manage retailer expectations.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>2. Value-Added Program Structure</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Develop co-marketing programs that reward brand-supportive behavior.</li>
+                        <li>Offer exclusive products or early access to retailers maintaining price integrity.</li>
+                        <li>Create incentive structures tied to full-price sell-through rather than volume alone.</li>
+                    </ul>
+
+                    <h3>4. Supply Chain Management</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Implement more granular inventory allocation based on retailer performance.</li>
+                        <li>Monitor and analyze sell-through data to identify optimal inventory distribution.</li>
+                    </ul>
+                    
+                    <h3>6. Monitoring & Analytics Enhancement</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-400">
+                        <li>Implement real-time price monitoring across all channels.</li>
+                        <li>Develop retailer scorecards combining pricing behavior, stock management, and brand presentation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2>Immediate Action Items 🚀</h2>
+            <ul class="list-disc list-inside ml-4 text-gray-400">
+                <li><strong class="text-red">Address critical stock issues</strong> at **grillgott.com** and **fluchtrucksack.de**.</li>
+                <li><strong class="text-yellow-400">Evaluate partnership terms</strong> with **fruugo.de** given extreme discount patterns.</li>
+                <li><strong class="text-yellow-400">Strengthen inventory planning</strong> with **grillgoods.de** for Q1 2025
